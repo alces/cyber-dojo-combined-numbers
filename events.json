@@ -123,5 +123,21 @@
       6,
       186768
     ]
+  },
+  {
+    "duration": 6.31212,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 8,
+    "time": [
+      2024,
+      6,
+      12,
+      9,
+      57,
+      48,
+      707023
+    ]
   }
 ]
