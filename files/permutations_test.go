@@ -21,7 +21,7 @@ var withoutItemResults = []struct{
         []int{1,2,3}, 1, []int{1,3}, "remove middle",
     },
     {
-        []int{1}, 1, []int{1}, "index out of bound",
+        []int{1,2,3}, 3, []int{1,2,3}, "index out of bound",
     },
 }
 
