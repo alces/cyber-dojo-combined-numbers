@@ -28,9 +28,14 @@ func permutations(slice []int) [][]int {
 }
 
 func withoutItem(slice []int, index int) []int {
-    if index >= len(slice) {
-        return slice
+    size := len(slice)
+    result := make([]int, size)
+    
+    copy(result, slice)
+    
+    if index >= size {
+        return result
     }
     
-    return append(slice[:index], slice[index + 1:]...)
+    return append(result[:index], result[index + 1:]...)
 }
