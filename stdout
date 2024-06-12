@@ -1,5 +1,5 @@
-i: 0, head: [1], tail: [2]
-i: 1, head: [2], tail: [2]
+slice: [2 2], i: 0, head: [1], tail: [2]
+slice: [2 2], i: 1, head: [2], tail: [2]
 --- FAIL: TestPermutations (0.00s)
     permutations_test.go:23: 
         	Error Trace:	permutations_test.go:23
@@ -19,4 +19,4 @@ i: 1, head: [2], tail: [2]
         	Messages:   	two-element slice
 FAIL
 exit status 1
-FAIL	_/sandbox	0.008s
+FAIL	_/sandbox	0.014s

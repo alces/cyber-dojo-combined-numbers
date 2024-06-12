@@ -459,5 +459,21 @@
       10,
       199017
     ]
+  },
+  {
+    "duration": 6.945664,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 29,
+    "time": [
+      2024,
+      6,
+      12,
+      11,
+      39,
+      38,
+      679594
+    ]
   }
 ]
