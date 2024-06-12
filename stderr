@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./permutations.go:17:50: cannot use p (variable of type []int) as type int in argument to append

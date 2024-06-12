@@ -1,1 +1,20 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestPermutations (0.00s)
+    permutations_test.go:23: 
+        	Error Trace:	permutations_test.go:23
+        	Error:      	Not equal: 
+        	            	expected: [][]int{[]int{1, 2}, []int{2, 1}}
+        	            	actual  : [][]int{[]int{1, 2}, []int{2, 2}}
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -7,3 +7,3 @@
+        	            	   (int) 2,
+        	            	-  (int) 1
+        	            	+  (int) 2
+        	            	  }
+        	Test:       	TestPermutations
+        	Messages:   	two-element slice
+FAIL
+exit status 1
+FAIL	_/sandbox	0.005s

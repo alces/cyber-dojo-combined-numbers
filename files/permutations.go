@@ -14,7 +14,7 @@ func permutations(slice []int) [][]int {
         tail := withoutItem(slice, i)
         
         for _, p := range permutations(tail) {
-            result = append(result, append(head, p))
+            result = append(result, append(head, p...))
         }
     }    
     
