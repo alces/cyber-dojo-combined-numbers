@@ -5,8 +5,20 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
+var permutationsResults = []struct {
+    slice    []int
+    expected [][]int
+    message  string
+} {
+    {
+        []int{1}, [][]int{{1}}, "one-element slice",
+    },
+}
+
 func TestPermutations(t *testing.T) {
-    assert.Equal(t, [][]int{{1}}, permutations([]int{1}))
+    for _, r := range permutationsResults {
+        assert.Equal(t, r.expected, permutations(r.slice), r.message)
+    }
 }    
 
 var withoutItemResults = []struct{
