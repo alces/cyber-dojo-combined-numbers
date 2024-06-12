@@ -18,7 +18,7 @@ var withoutItemResults = []struct{
         []int{1,2,3}, 0, []int{2,3}, "remove first",
     },
     {
-        []int{1,2,3}, 1, []int{1,3}, "remove middle",
+        []int{1,2,3,4,5}, 2, []int{1,2,4,5}, "remove middle",
     },
     {
         []int{1,2,3}, 3, []int{1,2,3}, "index out of bound",
