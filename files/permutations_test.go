@@ -20,6 +20,9 @@ var withoutItemResults = []struct{
     {
         []int{1,2,3}, 1, []int{1,3}, "remove middle",
     },
+    {
+        []int{1}, 1, []int{1}, "index out of bound",
+    },
 }
 
 func TestWithoutItem(t *testing.T) {
