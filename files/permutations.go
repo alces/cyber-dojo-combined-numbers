@@ -13,7 +13,7 @@ func permutations(slice []int) (result [][]int) {
         }
     }    
     
-    return result
+    return
 }
 
 func withoutItem(slice []int, index int) []int {
