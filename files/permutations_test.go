@@ -6,7 +6,7 @@ import (
 )
 
 func TestPermutations(t *testing.T) {
-    assert.Equal(t, [][]int{{1}}, permutations([]int{1})
+    assert.Equal(t, [][]int{{1}}, permutations([]int{1}))
 }    
 
 var withoutItemResults = []struct{

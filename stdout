@@ -1,1 +1,21 @@
-FAIL	_/sandbox [setup failed]
+--- FAIL: TestPermutations (0.00s)
+    permutations_test.go:9: 
+        	Error Trace:	permutations_test.go:9
+        	Error:      	Not equal: 
+        	            	expected: [][]int{[]int{1}}
+        	            	actual  : [][]int{}
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1,5 +1,2 @@
+        	            	-([][]int) (len=1) {
+        	            	- ([]int) (len=1) {
+        	            	-  (int) 1
+        	            	- }
+        	            	+([][]int) {
+        	            	 }
+        	Test:       	TestPermutations
+FAIL
+exit status 1
+FAIL	_/sandbox	0.008s
