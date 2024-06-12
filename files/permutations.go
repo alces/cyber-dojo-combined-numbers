@@ -10,11 +10,8 @@ func permutations(slice []int) [][]int {
     result := [][]int{}
     
     for i := 0; i < size; i++ {
-        head := []int{slice[i]}
-        tail := withoutItem(slice, i)
-        
-        for _, p := range permutations(tail) {
-            result = append(result, append(head, p...))
+        for _, p := range permutations(withoutItem(slice, i)) {
+            result = append(result, append([]int{slice[i]}, p...))
         }
     }    
     
