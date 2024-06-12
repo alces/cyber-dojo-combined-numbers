@@ -1,14 +1,12 @@
 package combine_numbers
 
-func permutations(slice []int) [][]int {
+func permutations(slice []int) (result [][]int) {
     size := len(slice)
     
     if size <= 1 {
-        return [][]int{slice}
+        return append(result, slice)
     }
-    
-    result := [][]int{}
-    
+        
     for i := 0; i < size; i++ {
         for _, p := range permutations(withoutItem(slice, i)) {
             result = append(result, append([]int{slice[i]}, p...))
