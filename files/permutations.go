@@ -17,7 +17,7 @@ func permutations(slice []int) [][]int {
         head := []int{slice[i]}
         tail := withoutItem(slice, i)
         
-        fmt.Printf("head: %v, tail: %v\n", head, tail)
+        fmt.Printf("i: %v, head: %v, tail: %v\n", i, head, tail)
         
         for _, p := range permutations(tail) {
             result = append(result, append(head, p...))
