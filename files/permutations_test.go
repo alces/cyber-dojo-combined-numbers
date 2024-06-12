@@ -12,7 +12,7 @@ var withoutItemResults = []struct{
     message  string
 } {
     {
-        []int{1,2}, 1, []int{1}, "remove last",
+        []int{1,2,3}, 2, []int{1,2}, "remove last",
     },
     {
         []int{1,2}, 0, []int{2}, "remove first",
