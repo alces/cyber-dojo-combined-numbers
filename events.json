@@ -43,5 +43,21 @@
       37,
       279574
     ]
+  },
+  {
+    "duration": 6.391106,
+    "colour": "green",
+    "predicted": "green",
+    "revert_if_wrong": "off",
+    "index": 3,
+    "time": [
+      2024,
+      6,
+      12,
+      9,
+      54,
+      44,
+      886561
+    ]
   }
 ]

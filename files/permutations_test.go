@@ -5,6 +5,18 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
+var withoutItemResults = []struct{
+    slice    []int
+    index    int
+    expected []int
+} {
+    {
+        []int{1,2}, 1, []int{1},
+    }, 
+}
+
 func TestWithoutItem(t *testing.T) {
-    assert.Equal(t, []int{1}, withoutItem([]int{1,2}, 1))
+    for _, r := range withoutItemResults {
+        assert.Equal(t, r.expected, withoutItem(r.slice, r.index))
+    }
 }
