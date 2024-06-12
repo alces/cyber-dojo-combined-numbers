@@ -9,9 +9,10 @@ var withoutItemResults = []struct{
     slice    []int
     index    int
     expected []int
+    message  string
 } {
     {
-        []int{1,2}, 1, []int{1},
+        []int{1,2}, 1, []int{1}, "remove last",
     }, 
 }
 
