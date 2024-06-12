@@ -13,7 +13,10 @@ var withoutItemResults = []struct{
 } {
     {
         []int{1,2}, 1, []int{1}, "remove last",
-    }, 
+    },
+    {
+        []int{1,2}, 0, []int{1}, "remove first",
+    },
 }
 
 func TestWithoutItem(t *testing.T) {
