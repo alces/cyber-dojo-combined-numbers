@@ -8,19 +8,24 @@ import (
 var permutationsResults = []struct {
     slice    []int
     expected [][]int
-    message  string
 } {
     {
-        []int{1}, [][]int{{1}}, "one-element slice",
+        []int{1}, [][]int{{1}},
     },
     {
-        []int{1,2}, [][]int{{1,2}, {2,1}}, "two-element slice",
+        []int{1,2}, [][]int{{1,2}, {2,1}},
     },
 }
 
 func TestPermutations(t *testing.T) {
     for _, r := range permutationsResults {
-        assert.Equal(t, r.expected, permutations(r.slice), r.message)
+        actual := permutations(r.slice)
+        
+        assert.Len(t, actual, len(r.expected))
+        
+        for _, e := range r.expected {
+            assert.Contains(t, actual, e)
+        }
     }
 }    
 
