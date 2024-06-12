@@ -5,6 +5,10 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
+func TestPermutations(t *testing.T) {
+    assert.Equal(t, [][]int{{1}}, permutations([]int{1})
+}    
+
 var withoutItemResults = []struct{
     slice    []int
     index    int
