@@ -13,6 +13,9 @@ var permutationsResults = []struct {
     {
         []int{1}, [][]int{{1}}, "one-element slice",
     },
+    {
+        []int{1,2}, [][]int{{1,2}, {2,1}}, "two-element slice",
+    },
 }
 
 func TestPermutations(t *testing.T) {
