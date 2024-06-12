@@ -1,5 +1,9 @@
 package combine_numbers
 
+import (
+    "fmt"
+)
+
 func permutations(slice []int) [][]int {
     size := len(slice)
     
@@ -12,6 +16,8 @@ func permutations(slice []int) [][]int {
     for i := 0; i < size; i++ {
         head := []int{slice[i]}
         tail := withoutItem(slice, i)
+        
+        fmt.Printf("head: %v, tail: %v\n", head, tail)
         
         for _, p := range permutations(tail) {
             result = append(result, append(head, p...))
