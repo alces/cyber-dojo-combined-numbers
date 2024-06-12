@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./permutations.go:4:5: imported and not used: "fmt"

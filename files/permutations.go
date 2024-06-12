@@ -1,9 +1,5 @@
 package combine_numbers
 
-import (
-    "fmt"
-)
-
 func permutations(slice []int) [][]int {
     size := len(slice)
     
