@@ -1,6 +1,10 @@
 package combine_numbers
 
 func permutations(slice []int) [][]int {
+    if len(slice) <= 1 {
+        return [][]int{slice}
+    }
+    
     return [][]int{}
 }
 
