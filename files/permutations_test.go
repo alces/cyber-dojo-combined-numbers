@@ -15,7 +15,7 @@ var withoutItemResults = []struct{
         []int{1,2,3}, 2, []int{1,2}, "remove last",
     },
     {
-        []int{1,2}, 0, []int{2}, "remove first",
+        []int{1,2,3}, 0, []int{2,3}, "remove first",
     },
     {
         []int{1,2,3}, 1, []int{1,3}, "remove middle",
