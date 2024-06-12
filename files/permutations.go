@@ -1,11 +1,24 @@
 package combine_numbers
 
 func permutations(slice []int) [][]int {
-    if len(slice) <= 1 {
+    size := len(slice)
+    
+    if size <= 1 {
         return [][]int{slice}
     }
     
-    return [][]int{}
+    result := [][]int{}
+    
+    for i := 0; i < size; i++ {
+        head := []int{slice[i]}
+        tail := withoutItem(slice, i)
+        
+        for _, p := range permutations(tail) {
+            result = append(result, append(head, p))
+        }
+    }    
+    
+    return result
 }
 
 func withoutItem(slice []int, index int) []int {
