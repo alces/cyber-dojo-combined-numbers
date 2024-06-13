@@ -1,17 +1,2 @@
---- FAIL: TestLargest (0.00s)
-    main_test.go:14: 
-        	Error Trace:	main_test.go:14
-        	Error:      	Not equal: 
-        	            	expected: "95021"
-        	            	actual  : ""
-        	            	
-        	            	Diff:
-        	            	--- Expected
-        	            	+++ Actual
-        	            	@@ -1 +1 @@
-        	            	-95021
-        	            	+
-        	Test:       	TestLargest
-FAIL
-exit status 1
-FAIL	_/sandbox	0.002s
+PASS
+ok  	_/sandbox	0.009s

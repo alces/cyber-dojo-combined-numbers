@@ -5,8 +5,15 @@ import (
     "strings"
 )
 
-func Largest(slice []int) string {
-    return ""
+func Largest(slice []int) (result string) {
+    for _, p := range permutations(slice) {
+        candidate := joinNumbers(p)
+        if candidate > result {
+            result = candidate
+        }
+    }
+    
+    return
 }
 
 func joinNumbers(slice []int) string {
