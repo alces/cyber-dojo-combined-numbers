@@ -1,7 +1,9 @@
 package combine_numbers
 
 import (
+    "fmt"
     "testing"
+
     "github.com/stretchr/testify/assert"
 )
 
@@ -13,13 +15,12 @@ func TestJoinNumbers(t *testing.T) {
 var largestTestCases = []struct {
     slice    []int
     expected string
-    message  string
 } {
-    {[]int{50, 2, 1, 9}, "95021", "[50, 2, 1, 9]"},
+    {[]int{50, 2, 1, 9}, "95021"},
 }
 
 func TestLargest(t *testing.T) {
     for _, r := range largestTestCases {
-        assert.Equal(t, r.expected, Largest(r.slice), r.message)
+        assert.Equal(t, r.expected, Largest(r.slice), fmt.Sprintf("%v", r.slice))
     }
 }
