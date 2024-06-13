@@ -16,6 +16,7 @@ var largestTestCases = []struct {
     slice    []int
     expected string
 } {
+    {[]int{5, 50, 56}, "56550"},
     {[]int{50, 2, 1, 9}, "95021"},
     {[]int{420, 42, 423}, "42423420"},
 }
