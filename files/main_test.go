@@ -11,5 +11,5 @@ func TestJoinNumbers(t *testing.T) {
 }
 
 func TestLargest(t *testing.T) {
-    assert.Equal(t, "95021", Lagest([]int{50, 2, 1, 9}))
+    assert.Equal(t, "95021", Largest([]int{50, 2, 1, 9}))
 }
