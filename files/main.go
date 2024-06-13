@@ -5,6 +5,10 @@ import (
     "strings"
 )
 
+func Largest(slice []int) string {
+    return ""
+}
+
 func joinNumbers(slice []int) string {
     size := len(slice)
     buffer := make([]string, size)

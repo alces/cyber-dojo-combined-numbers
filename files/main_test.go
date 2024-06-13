@@ -9,3 +9,7 @@ func TestJoinNumbers(t *testing.T) {
     assert.Equal(t, "", joinNumbers([]int{}))
     assert.Equal(t, "12345", joinNumbers([]int{1, 23, 45}))
 }
+
+func TestLargest(t *testing.T) {
+    assert.Equal(t, "95021", Lagest([]int{50, 2, 1, 9}))
+}
