@@ -17,6 +17,7 @@ var largestTestCases = []struct {
     expected string
 } {
     {[]int{50, 2, 1, 9}, "95021"},
+    {[]int{420, 42, 423}, "42423420"},
 }
 
 func TestLargest(t *testing.T) {
