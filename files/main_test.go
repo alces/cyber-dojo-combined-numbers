@@ -6,5 +6,6 @@ import (
 )
 
 func TestJoinNumbers(t *testing.T) {
+    assert.Equal(t, "", joinNumbers([]int{}))
     assert.Equal(t, "12345", joinNumbers([]int{1, 23, 45}))
 }
